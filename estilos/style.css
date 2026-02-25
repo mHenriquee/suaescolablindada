@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* 
+    Tipos de format()
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype 
+    - true-aat (Apple Advanced Typography)
+    - svg
+*/
+
+@font-face {
+    font-family: 'Gabarito';
+    src: url('../fontes/Gabarito.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ibarra';
+    src: url('../fontes/IbarraRealNova.ttf') format('truetype');
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --fundo-principal: #ffffff;
+    --fundo-secundario: #d3d3d3;
+    --fundo-terciario: #000000;
+}
+
+/* Fazer mobile first! */
+
+header {
+    background-color: var(--fundo-secundario);
+    background-image: url(/imagens/imagem.png);
+    height: 2fr;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Gabarito';
+}
+
+header > hr {
+    width: 50vw;
+    height: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+header > nav {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+header, footer > a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Gabarito';
+}
+
+footer {
+    background-color: var(--fundo-terciario);
+    height: 1fr;
+    width: 100vw;
+    font-family: 'Gabarito';
+}
+
+
