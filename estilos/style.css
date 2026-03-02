@@ -93,7 +93,7 @@ header > nav > ul > a > li:hover {
 }
 
 section#cursos {
-    padding: 40px;
+    padding: 5vh 10vw;
 }
 
 #cursos > article > h2 {
@@ -109,10 +109,11 @@ section#cursos {
     font-size: 1.2em;
     margin: 30px auto;
     text-align: justify;
+    text-indent: 20px;
 }
 
 section#sobre {
-    padding: 40px;
+    padding: 5vh 10vw;
     background-color: var(--fundo-secundario);
 }
 
@@ -129,6 +130,7 @@ section#sobre {
     font-size: 1.2em;
     margin: 30px auto;
     text-align: justify;
+    text-indent: 20px;
 }
 
 #botao {
@@ -151,12 +153,12 @@ section#sobre {
 
 section#cursos > div.imagens {
     background-image: url(../imagens/sala.jpg);
-    background-position: center left;
+    background-position: center center;
     background-size: cover;
 
-    margin-top: 20px;
+    margin-top: 30px;
     border: 1px solid black;
-    width: 82.6vw;
+    width: 77.5vw;
     height: 60vh;
 }
 
@@ -165,9 +167,9 @@ section#sobre > div.imagens {
     background-position: center center;
     background-size: cover;
 
-    margin-top: 20px;
+    margin-top: 30px;
     border: 1px solid black;
-    width: 82.6vw;
+    width: 77.5vw;
     height: 60vh;
 }
 
@@ -197,8 +199,9 @@ article.aval > h3 {
 
 article.aval > p {
     font-family: 'Ibarra';
-    margin: 20px auto;
     font-size: 1.09em;
+    margin: 10px;
+    margin-left: revert-layer;
 }
 
 footer {
@@ -224,24 +227,26 @@ div#social {
 .fa-instagram {
     color: white;
     font-size: 22px;
-    margin-right: 6px;
+    margin-right: 4px;
 }
 
 .fa-instagram:hover {
     color: #d3d3d3;
     font-size: 23px;
+    transition: 0.3s;
+    margin-bottom: -2px;
 }
 
 .fa-square-facebook:hover {
     color: #d3d3d3;
     font-size: 23px;
     transition: 0.3s;
+    margin-bottom: -2px;
 }
 
 .fa-square-facebook {
     color: white;
     font-size: 22px;
-    transition: 0.3s;
 }
 
 

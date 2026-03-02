@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px) { 
+    html {
+        transition: 0.3s;
+    }
+
+    header {
+        /*background-image: url(../imagens/imagem.png);*/
+        background: url(../imagens/imagem.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.527);
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+        height: 300px;
+        width: 100vw;
+        font-family: 'Gabarito';
+        text-align: center;
+        color: var(--fundo-principal);
+    }
+
+    header > nav {
+        display: flex;
+        margin-top: -10px;
+    }
+
+    header > h1 {
+        font-size: 3.5em;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-align: left;
+    }
+
+    header > hr {
+        display: none;
+    }
+
+    header > nav > ul > a > li {
+        text-decoration: none;
+        border: 1px solid rgba(255, 255, 255, 0.507);
+        border-radius: 3px;
+    }
+
+    header > nav > ul {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+
+    header > nav > ul > a > li:hover {
+        background-color: #ffffff3b;
+        color: rgba(255, 255, 255, 0.863);
+        border-radius: 3px;
+        transition: 0.3s;
+    }
+
+    section#cursos {
+        padding: 5vh 15vw;
+    }
+
+    section#sobre {
+        padding: 5vh 15vw;
+        background-color: var(--fundo-secundario);
+    }
+
+    section#cursos > div.imagens {
+        background-image: url(../imagens/sala.jpg);
+        background-position: center center;
+        background-size: cover;
+
+        margin-top: 30px;
+        border: 1px solid black;
+        width: 68.5vw;
+        height: 60vh;
+    }
+
+    section#sobre > div.imagens {
+        background-image: url(../imagens/sala2.jpg);
+        background-position: center center;
+        background-size: cover;
+
+        margin-top: 30px;
+        border: 1px solid black;
+        width: 68.5vw;
+        height: 60vh;
+    }
+
+    section#avaliacoes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    div#titulo {
+        height: 60px;
+        width: 80vw;
+        text-align: center;
+        font-size: 2em;
+        font-family: 'Gabarito';
+        display: block;
+        text-indent: 30px;
+    }
+
+    article.aval {
+        display: flex;
+        width: 300px;
+        height: 250px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 30px;
+        margin-top: 25px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.575);
+    }
+
+    article.aval:hover {
+        background-color: rgb(224, 224, 224);
+        transition: 0.4s;
+    }
+
+    article.aval > h3 {
+        font-family: 'Gabarito';
+        font-size: 1.8em;  
+        font-weight: 550; 
+    }
+
+    article.aval > p {
+        font-family: 'Ibarra';
+        font-size: 1.2em;
+        margin-left: revert-layer;
+        text-align: center;
+    }
+
+}
