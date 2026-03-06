@@ -1,7 +1,168 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 1200px) { 
+@media screen and (min-width: 1050px) { 
     main {
-        background-color: rgb(109, 111, 255);
+        background-color: rgb(255, 255, 255);
+        transition: 0.3s;
     }
+
+    header {
+        /*background-image: url(../imagens/imagem.png);*/
+        background: url(../imagens/imagem.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.527);
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+        height: 225px;
+        width: 100vw;
+        font-family: 'Gabarito';
+        text-align: center;
+        color: var(--fundo-principal);
+    }
+
+    header > nav {
+        display: flex;
+        margin-top: -10px;
+        flex-wrap: nowrap;
+    }
+
+    header > h1 {
+        font-size: 2.8em;
+        text-transform: uppercase;
+        text-align: left;
+        text-decoration-color: rgb(255, 255, 255);
+        text-decoration-thickness: 5px;
+        text-underline-offset: 10px;
+    }
+
+    header > hr {
+        display: none;
+    }
+
+    header > nav > ul > a > li {
+        text-decoration: none;
+        border-radius: 3px;
+    }
+
+    header > nav > ul {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+
+    header > nav > ul > a > li:hover {
+        background-color: #ffffff3b;
+        color: rgba(255, 255, 255, 0.863);
+        border-radius: 3px;
+        transition: 0.3s;
+    }
+
+section#cursos {
+    display: flex;
+    padding: 5vh 8vw;
+    align-items: center;
+}
+
+#cursos > article {
+    display: flex;
+    width: 70vw;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#cursos > article > h2 {
+    font-family: 'Gabarito';
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+#cursos > article > p {
+    font-family: 'Ibarra';
+    font-size: 1.2em;
+    margin: 30px auto;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+section#sobre {
+    display: flex;
+    padding: 6vh 8vw;
+    background-color: var(--fundo-secundario);
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#sobre > article {
+    display: flex;
+    width: 70vw;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#sobre > article > h2 {
+    font-family: 'Gabarito';
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+#sobre > article > p {
+    font-family: 'Ibarra';
+    font-size: 1.2em;
+    margin: 30px auto;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+#botao {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 15px 30px;
+    font-family: 'Gabarito';
+    text-align: center;
+}
+
+#botao:hover {
+    background-color: #000000;
+    transition: 0.2s;
+    color: #ffffff;
+}
+
+section#cursos > div.imagens {
+    background-image: url(../imagens/sala.jpg);
+    background-position: center center;
+    background-size: cover;
+
+    border: 1px solid black;
+    width: 70vw;
+    height: 50vh;
+    margin-left: 50px;
+    margin-top: unset;
+
+}
+
+section#sobre > div.imagens {
+    background-image: url(../imagens/sala2.jpg);
+    background-position: center center;
+    background-size: cover;
+
+    border: 1px solid black;
+    width: 70vw;
+    height: 50vh;
+    margin-right: 50px;
+    margin-top: unset;
+
+}
 }

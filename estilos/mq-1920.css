@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+@media screen and (min-width:1638px) {
+    main {
+        background-color: rgb(255, 255, 255);
+    }
+
+    header {
+        /*background-image: url(../imagens/imagem.png);*/
+        background: url(../imagens/imagem.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.527);
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+        height: 200px;
+        width: 100vw;
+        font-family: 'Gabarito';
+        text-align: center;
+        color: var(--fundo-principal);
+    }
+
+    header > nav {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    header > h1 {
+        font-size: 3em;
+        text-transform: uppercase;
+        text-decoration-color: rgb(255, 255, 255);
+        text-decoration-thickness: 5px;
+        text-underline-offset: 10px;
+        text-indent: 50px;
+    }
+
+    header > hr {
+        display: none;
+    }
+
+    header > nav > ul > a > li {
+        text-decoration: none;
+        border-radius: 3px;
+    }
+
+    header > nav > ul {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.2em;
+        margin-right: 30px;
+    }
+
+
+    article.aval {
+        display: flex;
+        width: 300px;
+        height: 250px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 30px;
+        margin-top: 25px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.575);
+    }
+
+    article.aval:hover {
+        background-color: rgb(224, 224, 224);
+        transition: 0.4s;
+    }
+
+    article.aval > h3 {
+        font-family: 'Gabarito';
+        font-size: 1.8em;  
+        font-weight: 550; 
+    }
+
+    article.aval > p {
+        font-family: 'Ibarra';
+        font-size: 1.2em;
+        margin-left: revert-layer;
+        text-align: center;
+    }
+
+    section#cursos {
+        display: flex;
+        padding: 8vh 22vw;
+        align-items: center;
+    }
+
+    #cursos > article {
+        display: flex;
+        width: 70vw;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #cursos > article > h2 {
+        font-family: 'Gabarito';
+        text-transform: uppercase;
+        font-size: 3em;
+        margin: 10px auto;
+        text-align: justify;
+    }
+
+    #cursos > article > p {
+        font-family: 'Ibarra';
+        font-size: 1.4em;
+        margin: 30px auto;
+        text-align: justify;
+        text-indent: 20px;
+    }
+
+    section#sobre {
+        display: flex;
+        padding: 8vh 22vw;
+        background-color: var(--fundo-secundario);
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    #sobre > article {
+        display: flex;
+        width: 70vw;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #sobre > article > h2 {
+        font-family: 'Gabarito';
+        text-transform: uppercase;
+        font-size: 3em;
+        margin: 10px auto;
+        text-align: justify;
+    }
+
+    #sobre > article > p {
+        font-family: 'Ibarra';
+        font-size: 1.4em;
+        margin: 30px auto;
+        text-align: justify;
+        text-indent: 20px;
+    }
+
+    #botao {
+        text-decoration: none;
+        font-size: large;
+        color: black;
+        background-color: transparent;
+        border: 1px solid black;
+        padding: 15px 30px;
+        font-family: 'Gabarito';
+        text-align: center;
+    }
+
+    #botao:hover {
+        background-color: #000000;
+        transition: 0.2s;
+        color: #ffffff;
+    }
+
+    section#cursos > div.imagens {
+        background-image: url(../imagens/sala.jpg);
+        background-position: center center;
+        background-size: cover;
+
+        border: 1px solid black;
+        width: 70vw;
+        height: 50vh;
+        margin-left: 50px;
+        margin-top: unset;
+
+    }
+
+    section#sobre > div.imagens {
+        background-image: url(../imagens/sala2.jpg);
+        background-position: center center;
+        background-size: cover;
+
+        border: 1px solid black;
+        width: 70vw;
+        height: 50vh;
+        margin-right: 50px;
+        margin-top: unset;
+    }
+
+    div#titulo {
+        height: 60px;
+        width: 100vw;
+        text-align: center;
+        font-size: 2em;
+        font-family: 'Gabarito';
+        display: block;
+        text-indent: 30px;
+    }
+
+    section#avaliacoes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    article.aval {
+        display: flex;
+        width: 400px;
+        height: 300px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 30px;
+        margin-top: 25px;
+        padding: 6px;
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.575);
+    }
+
+    article.aval:hover {
+        background-color: rgb(224, 224, 224);
+        transition: 0.4s;
+    }
+
+    article.aval > h3 {
+        font-family: 'Gabarito';
+        font-size: 2.2em;  
+        font-weight: 600; 
+    }
+
+    article.aval > p {
+        font-family: 'Ibarra';
+        font-size: 1.4em;
+        margin-left: revert-layer;
+        text-align: center;
+    }
+
+    section#avaliacoes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

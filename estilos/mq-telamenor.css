@@ -28,13 +28,15 @@
     header > nav {
         display: flex;
         margin-top: -10px;
+        flex-wrap: nowrap;
     }
 
     header > h1 {
-        font-size: 3.5em;
+        font-size: 2.5em;
         text-transform: uppercase;
         text-decoration: underline;
         text-align: left;
+        text-underline-offset: 9px;
     }
 
     header > hr {
@@ -43,7 +45,7 @@
 
     header > nav > ul > a > li {
         text-decoration: none;
-        border: 1px solid rgba(255, 255, 255, 0.507);
+
         border-radius: 3px;
     }
 
@@ -51,7 +53,7 @@
         color: white;
         text-decoration: none;
         font-weight: 600;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     header > nav > ul > a > li:hover {
