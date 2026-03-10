@@ -11,7 +11,7 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        box-shadow: inset 0px -1px 0px 0px #000000;
+        box-shadow: inset -2px -3px 0px 0px #0000005b;
 
         display: flex;
         justify-content: space-between;

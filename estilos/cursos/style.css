@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Gabarito';
-    src: url('../fontes/Gabarito.ttf') format('truetype');
+    src: url('../../fontes/Gabarito.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Ibarra';
-    src: url('../fontes/IbarraRealNova.ttf') format('truetype');
+    src: url('../../fontes/IbarraRealNova.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -29,7 +29,7 @@
 
 header {
     /*background-image: url(../imagens/imagem.png);*/
-    background: url(../imagens/imagem.png);
+    background: url(../../imagens/imagem.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -43,6 +43,7 @@ header {
     font-family: 'Gabarito';
     text-align: center;
     color: var(--fundo-principal);
+    overflow: hidden;
 }
 
 /* Fazer novo menu para tablet e para PC*/
@@ -83,8 +84,28 @@ header > nav > ul > a > li:hover {
     transition: 0.3s;
 }
 
+.titulo > a {
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    padding: 0px 5px;
+}
+
+.titulo > a:hover {
+    background-color: rgba(255, 255, 255, 0.267);
+    border-radius: 5px;    
+}
+
+main {
+    width: 98vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20px repeat(2, 2fr) 20px repeat(2, 2fr);
+    grid-template-columns: 30px repeat(4, 2fr) 40px;
+}
+
 #botao {
-    display: block;
+    display: flex;
     text-decoration: none;
     color: black;
     background-color: transparent;
@@ -93,6 +114,8 @@ header > nav > ul > a > li:hover {
     font-family: 'Gabarito';
     margin: auto;
     text-align: center;
+    width: 16vw;
+    justify-content: center;
 }
 
 #botao:hover {
@@ -113,11 +136,13 @@ footer {
 
 footer > p {
     display: inline-block;
+    font-family: 'Gabarito';
+    font-size: 1em;
 }
 
 div#social {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-bottom: -5px;
 }
 
