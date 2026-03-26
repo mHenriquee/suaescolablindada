@@ -108,7 +108,7 @@ main {
     display: grid;
     grid-row: 2 / 3;
     grid-column: 1 / 7;
-    padding: 20px 50px 0px 30px;
+    padding: 20px 50px 0px 38px;
     align-items: center;
     margin-top: -20px;
     align-content: space-between;
@@ -116,13 +116,13 @@ main {
 
 h2 {
     font-family: 'Gabarito';
-    font-size: 2.5em;
+    font-size: 1.8em;
     text-align: center;
-    padding-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: 'Ibarra';
     text-align: justify;
     text-indent: 20px;
@@ -140,7 +140,8 @@ p {
     grid-row: 3 / 7;
     grid-column: 1 / 7;
     background-color: #F2F6F3;
-    padding: 20px 50px 0px 30px;
+    padding: 45px 50px 0px 38px;
+    align-content: start;
 }
 
 #botao {
@@ -164,22 +165,20 @@ p {
 }
 
 picture#fotos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    width: 70vw;
+    display: block;
+    position: relative;
+    width: 65vw;
     height: 45vh;
-    transform: translate(43px, 20px);
+    background-color: rgba(240, 240, 240, 0.534); 
+    border: 1px solid rgba(0, 0, 0, 0.842);
+    margin: 25px auto auto auto;
 }
 
 div#quad1 {
-    display: flex;
-    background-color: rgba(190, 190, 190, 0.534); 
-    grid-row: 1 / 7;
-    grid-column: 1 / 6;
-    border: 1px solid rgba(0, 0, 0, 0.842);
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 div#quad1 > p.img {

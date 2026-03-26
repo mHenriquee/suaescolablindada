@@ -3,7 +3,7 @@
 @media screen and (min-width:1280px) {
     main {
         background-color: rgb(255, 255, 255);
-        transition: 0.3s;
+        transition: 0.5s;
     }
 
     header {
@@ -12,14 +12,13 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        box-shadow: inset 0px -1px 0px 0px #000000;
 
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
         align-items: center;
         
-        height: 150px;
+        height: 100px;
         width: 100vw;
         font-family: 'Gabarito';
         text-align: center;

@@ -11,14 +11,13 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        box-shadow: inset -2px -3px 0px 0px #0000005b;
 
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
         align-items: center;
         
-        height: 200px;
+        height: 100px;
         width: 100vw;
         font-family: 'Gabarito';
         text-align: center;

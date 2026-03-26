@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@media screen and (min-width:1280px) {
+    main {
+        transition: 0.5s;
+    }
+
+    main {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 35px 170px 1fr;
+        grid-template-columns: 3fr repeat(4, 4fr) 3fr;
+    }
+    
+    h2 {
+        font-family: 'Gabarito';
+        font-size: 2.8em;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #form > article {
+        width: 73.6vw;
+    }
+
+}
+
