@@ -2,7 +2,7 @@
 
 @media screen and (min-width:1638px) {
     main {
-        background-color: rgb(255, 255, 255);
+        transition: 0.3s;
     }
 
     header {

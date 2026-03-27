@@ -5,7 +5,7 @@
         transition: 0.3s;
     }
 
-        header {
+    header {
         /*background-image: url(../imagens/imagem.png);*/
         background: url(../../imagens/imagem.png);
         background-size: cover;
@@ -65,19 +65,37 @@
     }
 
     main {
-        grid-template-columns: 2fr repeat(4, 4fr) 2fr;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 0px repeat(2, 2fr) 30px repeat(2, 2fr);
+        grid-template-columns: 3fr repeat(4, 4fr) 3fr;
     }
 
-    #form > article {
+    #form > #contato {
         display: grid;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         grid-template-rows: repeat(3, 1fr) 50px;
         grid-template-columns: 1fr;
         align-items: center;
-        width: 80vw;
-        height: 78vh;
-        grid-auto-flow: column;
-        padding: 0px 50px;
-        margin: auto;
+        width: 72.8vw;
+        height: 70vh;
     }
 
+    #botao {
+        display: flex;
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+        border: 1px solid black;
+        padding: 10px 20px;
+        font-family: 'Gabarito';
+        margin: auto;
+        text-align: center;
+        width: 12vw;
+        justify-content: center;
+    }
 }
