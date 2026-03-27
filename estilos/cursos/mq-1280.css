@@ -2,41 +2,8 @@
 
 @media screen and (min-width: 1280px) { 
     html {
+        background-color: rgb(72, 255, 0);
         transition: 0.3s;
     }
 
-    main {
-        width: 100vw;
-        height: 100vh;
-        display: grid;
-        grid-template-rows: 0px repeat(2, 2fr) 30px repeat(2, 2fr);
-        grid-template-columns: 4fr repeat(4, 4fr) 4fr;
-    }
-
-    #form > #contato {
-        display: grid;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        grid-template-rows: repeat(3, 1fr) 50px;
-        grid-template-columns: 1fr;
-        align-items: center;
-        width: 66.5vw;
-        height: 70vh;
-    }
-
-    #botao {
-        display: flex;
-        text-decoration: none;
-        color: black;
-        background-color: transparent;
-        border: 1px solid black;
-        padding: 10px 20px;
-        font-family: 'Gabarito';
-        margin: auto;
-        text-align: center;
-        width: 10vw;
-        justify-content: center;
-    }
 }

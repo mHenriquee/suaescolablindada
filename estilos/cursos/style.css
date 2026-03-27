@@ -98,19 +98,18 @@ header > nav > ul > a > li:hover {
 }
 
 main {
-    width: 98vw;
-    min-height: 100vh;
+    width: 100vw;
+    min-height: 102vh;
     display: grid;
     grid-template-rows: 250px repeat(2, 500px) repeat(2, 1fr) 50px 1fr 200px;
-    grid-template-columns: 40px repeat(4, 2fr) 50px;
+    grid-template-columns: 35px repeat(4, 2fr) 35px;
     grid-auto-flow: column;
 }
 
 #text1 {
     display: grid;
     grid-row: 1 / 2;
-    grid-column: 1 / 7;
-    padding: 0px 30px 0px 30px;
+    grid-column: 2 / 6;
     align-items: center;
 }
 
@@ -129,19 +128,19 @@ main {
 }
 
 #foto1 {
-    display: flex;
+    display: grid;
+    grid-row: 2 / 3;
     width: 100vw;
     height: 100vh;
     background-color: #F2F6F3;
-    padding: 20px 40px 0px 30px;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 #foto1 > article > h2 {
     text-align: center;
     font-family: 'Gabarito';
     font-size: 2.3em;
+    margin-top: 10px;
 }
 
 #foto1 > article > p {
@@ -154,7 +153,7 @@ main {
 #foto1 > article.serv1 {
     display: flex;
     width: 87.3vw;
-    height: 54vh;
+    height: 44vh;
     flex-direction: column;
     align-items: center;
 }
@@ -162,7 +161,7 @@ main {
 #foto1 > article.serv2 {
     display: flex;
     width: 87.3vw;
-    height: 70vh;
+    height: 56vh;
     flex-direction: column;
     align-items: center;
 }
@@ -182,8 +181,8 @@ main {
 #planos {
     display: grid;
     grid-row: 4 / 6;
-    grid-column: 1 / 7;
-    padding: 20px 50px 0px 30px;
+    grid-column: 2 / 6;
+    padding: 20px;
     font-family: 'Gabarito';
 }
 
@@ -283,7 +282,8 @@ main {
     grid-row: 7 / 9;
     grid-column: 1 / 7;
     background-color: #F2F6F3;
-    padding: 20px 50px 0px 30px;
+    padding: 20px;
+    justify-items: center;
 }
 
 #cursos > article > h2 {
@@ -296,7 +296,6 @@ main {
     font-family: 'Ibarra';
     font-size: 1.2em;
     text-align: justify;
-    margin-top: 30px;
     text-indent: 30px;
 }
 
@@ -310,6 +309,13 @@ main {
     color: rgb(115, 141, 255);
 }
 
+#cursos > article#curso {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 88vw;
+    align-items: anchor-center;
+}
+
 #cursos > picture#fotos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -317,7 +323,6 @@ main {
     width: 85vw;
     height: 45vh;
     gap: 10px;
-    margin-top: -30px;
 }
 
 div#quad1 {
@@ -415,7 +420,6 @@ div#quad4 > p.img {
 }
 
 footer {
-    display: inline-block;
     background-color: var(--fundo-terciario);
     height: 60px;
     width: 100vw;
