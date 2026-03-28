@@ -2,8 +2,274 @@
 
 @media screen and (min-width: 1638px) { 
     html {
-        background-color: rgb(88, 236, 255);
         transition: 0.3s;
     }
 
+    header {
+        /*background-image: url(../imagens/imagem.png);*/
+        background: url(../../imagens/imagem.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+        box-shadow: -5px 2px 5px rgba(0, 0, 0, 0.527);
+        height: 100px;
+        width: 100vw;
+        font-family: 'Gabarito';
+        text-align: center;
+        color: var(--fundo-principal);
+    }
+
+    header > nav {
+        display: flex;
+        margin-top: -10px;
+        flex-wrap: nowrap;
+    }
+
+    header > h1 {
+        font-size: 2.8em;
+        text-transform: uppercase;
+        text-align: left;
+        text-decoration: underline;
+        text-decoration-color: rgb(255, 255, 255);
+        text-decoration-thickness: 5px;
+        text-underline-offset: 10px;
+    }
+
+    header > hr {
+        display: none;
+    }
+
+    header > nav > ul > a > li {
+        text-decoration: none;
+        border-radius: 3px;
+    }
+
+    header > nav > ul {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+
+    header > nav > ul > a > li:hover {
+        background-color: #ffffff3b;
+        color: rgba(255, 255, 255, 0.863);
+        border-radius: 3px;
+        transition: 0.3s;
+    }
+
+    main {
+        width: 100vw;
+        min-height: 102vh;
+        display: grid;
+        grid-template-rows: 250px repeat(2, 500px) repeat(2, 1fr) 0px 1fr 200px;
+        grid-template-columns: 400px repeat(4, 4fr) 400px;
+    }
+
+    #text1 > article > h2 {
+        text-align: center;
+        font-family: 'Gabarito';
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    #foto1 {
+        display: grid;
+        grid-row: 2 / 3;
+        width: 100vw;
+        height: 100vh;
+        background-color: #F2F6F3;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    #foto1 > article > h2 {
+        text-align: center;
+        font-family: 'Gabarito';
+        font-size: 3em;
+        margin-top: 0px;
+    }
+
+    #foto1 > article > p {
+        text-align: justify;
+        font-family: 'Ibarra';
+        font-size: 1.2em;
+        text-indent: 30px;
+    }
+
+     #foto1 > article.serv1 {
+        display: flex;
+        width: 30vw;
+        height: 50vh;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: -151px;
+    }
+
+    #foto1 > article.serv2 {
+        display: flex;
+        width: 30vw;
+        height: 50vh;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: -60px;
+    }
+
+    #ult {
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+
+    #planos {
+        grid-row: 4 / 6;
+        display: flex;
+        padding: 0px;
+        font-family: 'Gabarito';
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    
+    #planos > h2 {
+        font-size: 3.8em;
+        text-align: center;
+        width: 100vw;
+        height: 72px;
+        margin: 0px;
+    }
+
+    #planos > article#basico > h2 {
+        font-size: 2em;
+        font-weight: 600;
+        text-align: center;
+        margin: 20px;
+    }
+
+    #planos > article#basico > h3 {
+        font-size: 3em;
+        text-align: center;
+        margin: 80px 0px;
+    }
+
+    #planos > article#basico > p {
+        font-size: 1.1em;
+        font-weight: 100;
+        text-align: justify;
+        margin: 40px 0px 20px 0px;
+        text-indent: 20px;
+    }
+
+        #planos > article#padrao > h2 {
+        font-size: 2em;
+        font-weight: 600;
+        text-align: center;
+        margin: 20px;
+    }
+
+    #planos > article#padrao > h3 {
+        font-size: 3em;
+        text-align: center;
+        margin: 80px 0px;
+    }
+
+    #planos > article#padrao > p {
+        font-size: 1.1em;
+        font-weight: 100;
+        text-align: justify;
+        margin: 40px 0px 20px 0px;
+        text-indent: 20px;
+    }
+
+        #planos > article#premium > h2 {
+        font-size: 2em;
+        font-weight: 600;
+        text-align: center;
+        margin: 20px;
+    }
+
+    #planos > article#premium > h3 {
+        font-size: 3em;
+        text-align: center;
+        margin: 80px 0px;
+    }
+
+    #planos > article#premium > p {
+        font-size: 1.1em;
+        font-weight: 100;
+        text-align: justify;
+        margin: 40px 0px 20px 0px;
+        text-indent: 20px;
+    }
+
+    #planos > article#basico {
+        display: flex;
+        background-color: var(--fundo-secundario);
+        padding: 20px;
+        flex-direction: column;
+        width: 32%;
+        height: 65%;
+        margin: 0px;
+    }
+
+    #planos > article#padrao {
+        display: flex;
+        background-color: #000000;
+        padding: 20px;
+        margin: 0px 15px;
+        flex-direction: column;
+        width: 33.75%;
+        height: 65%;
+    }
+
+    #planos > article#premium {
+        display: flex;
+        background-color: #3d71ff;
+        padding: 20px;
+        flex-direction: column;
+        width: 32%;
+        height: 65%;
+        margin-left: 0px;
+    }
+
+    #botaocinza, #botaopreto, #botaoazul {
+        display: flex;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        border: 2.2px solid rgb(255, 255, 255);
+        padding: 15px 10px;
+        font-family: 'Gabarito';
+        margin: auto;
+        text-align: center;
+        width: 18vw;
+        justify-content: center;
+    }
+
+    #cursos > article#curso {
+        display: grid;
+        grid-template-rows: 100px 100px;
+        grid-template-columns: 55vw;
+        align-items: anchor-center;
+    }
+
+    #cursos > picture#fotos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        width: 40vw;
+        height: 47vh;
+        gap: 10px;
+    }
+
+    #cursos > article > h2 {
+        font-size: 3em;
+        font-family: 'Gabarito';
+        text-align: center;
+    }
 }

@@ -1,9 +1,177 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 1280px) { 
+@media screen and (min-width: 1280px) and (max-width: 1638px) { 
     html {
-        background-color: rgb(72, 255, 0);
         transition: 0.3s;
     }
 
+    main {
+        width: 100vw;
+        min-height: 102vh;
+        display: grid;
+        grid-template-rows: 250px repeat(2, 500px) repeat(2, 300px) 0px 1fr 200px;
+        grid-template-columns: 170px repeat(4, 4fr) 170px;
+    }
+
+    #text1 > article > h2 {
+        text-align: center;
+        font-family: 'Gabarito';
+        font-size: 2.6em;
+        margin-bottom: 20px;
+    }
+
+    #foto1 > article > h2 {
+        text-align: center;
+        font-family: 'Gabarito';
+        font-size: 2.8em;
+    }
+
+    #cursos > article > h2 {
+        font-size: 2.8em;
+        font-family: 'Gabarito';
+        text-align: center;
+    }
+
+    #foto1 > article.serv1 {
+        display: flex;
+        width: 48vw;
+        height: 44vh;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #foto1 > article.serv2 {
+        display: flex;
+        width: 48vw;
+        height: 48vh;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #planos {
+        grid-row: 4 / 6;
+        display: flex;
+        padding: 0px;
+        font-family: 'Gabarito';
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    
+    #planos > h2 {
+        font-size: 3.8em;
+        text-align: center;
+        width: 100vw;
+        height: 72px;
+        margin: 0px;
+    }
+
+    #planos > article#basico > h2 {
+        font-size: 2em;
+        font-weight: 600;
+        text-align: center;
+        margin: 20px;
+    }
+
+    #planos > article#basico > h3 {
+        font-size: 3em;
+        text-align: center;
+        margin: 80px 0px;
+    }
+
+    #planos > article#basico > p {
+        font-size: 1.1em;
+        font-weight: 100;
+        text-align: justify;
+        margin: 40px 0px 20px 0px;
+        text-indent: 20px;
+    }
+
+        #planos > article#padrao > h2 {
+        font-size: 2em;
+        font-weight: 600;
+        text-align: center;
+        margin: 20px;
+    }
+
+    #planos > article#padrao > h3 {
+        font-size: 3em;
+        text-align: center;
+        margin: 80px 0px;
+    }
+
+    #planos > article#padrao > p {
+        font-size: 1.1em;
+        font-weight: 100;
+        text-align: justify;
+        margin: 40px 0px 20px 0px;
+        text-indent: 20px;
+    }
+
+        #planos > article#premium > h2 {
+        font-size: 2em;
+        font-weight: 600;
+        text-align: center;
+        margin: 20px;
+    }
+
+    #planos > article#premium > h3 {
+        font-size: 3em;
+        text-align: center;
+        margin: 80px 0px;
+    }
+
+    #planos > article#premium > p {
+        font-size: 1.1em;
+        font-weight: 100;
+        text-align: justify;
+        margin: 40px 0px 20px 0px;
+        text-indent: 20px;
+    }
+
+    #planos > article#basico {
+        display: flex;
+        background-color: var(--fundo-secundario);
+        padding: 20px;
+        flex-direction: column;
+        width: 32%;
+        height: 65%;
+        margin: 0px;
+    }
+
+    #planos > article#padrao {
+        display: flex;
+        background-color: #000000;
+        padding: 20px;
+        margin: 0px 15px;
+        flex-direction: column;
+        width: 32.8%;
+        height: 65%;
+    }
+
+    #planos > article#premium {
+        display: flex;
+        background-color: #3d71ff;
+        padding: 20px;
+        flex-direction: column;
+        width: 32%;
+        height: 65%;
+        margin-left: 0px;
+    }
+
+    #cursos > article#curso {
+        display: grid;
+        grid-template-rows: 100px 100px;
+        grid-template-columns: 58vw;
+        align-items: anchor-center;
+    }
+
+    #cursos > picture#fotos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        width: 45vw;
+        height: 45vh;
+        gap: 10px;
+    }
 }
