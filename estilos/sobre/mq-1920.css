@@ -13,11 +13,11 @@
         grid-template-columns: 5fr repeat(4, 4fr) 5fr;
     }
     
-    h2 {
+    #texto > article > h2 {
         font-family: 'Gabarito';
         font-size: 3em;
         text-align: center;
-        padding-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     #form > article > h2 {
